@@ -9,7 +9,7 @@ server.route({
     method: 'GET',
     path: '/',
     handler: function (request, reply) {
-        reply('Hello, world!');
+        reply('hhh!');
     }
 });
 
@@ -21,10 +21,6 @@ server.route({
     }
 });
 
-server.start((err) => {
-
-    if (err) {
-        throw err;
-    }
-    console.log(`Server running at: ${server.info.uri}`);
+server.start(function () {
+    console.log('Server running at:', server.info.uri);
 });
