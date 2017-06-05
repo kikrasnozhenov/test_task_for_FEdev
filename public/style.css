@@ -1,0 +1,11 @@
+body
+  font: 100% $font-stack
+  color: $primary-color
+  margin: 0
+  bottom: 0
+
+.open_photos
+  $margin: 50
+  font:
+    size: 100px
+    weight: bold
