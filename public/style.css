@@ -1,11 +1,22 @@
-body
-  font: 100% $font-stack
-  color: $primary-color
-  margin: 0
-  bottom: 0
+body {
+  margin: 0;
+  bottom: 0;
+}
 
-.open_photos
-  $margin: 50
-  font:
-    size: 100px
-    weight: bold
+.menu-button {
+  padding: 15px;
+  font-size: 20px;
+  color: #c63731;
+  transition: 0.5s;
+}
+.menu-button:hover {
+  color: #525252;
+  transition: 0.5s;
+}
+
+.open_photos {
+  text-align: center;
+  display: block;
+  font-size: 40px;
+  padding: 20px 0px 20px;
+}
