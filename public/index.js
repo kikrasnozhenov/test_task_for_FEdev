@@ -6,7 +6,8 @@ angular.module('PhotosApp', ['ngRoute'])
       templateUrl : "gallery.html"
     })
     .when("/photos", {
-      templateUrl : "photos.html"
+      templateUrl : "/photos.html",
+      controller : "GalleryCtrl"
     })
     .otherwise({ 
           redirectTo: '/'
