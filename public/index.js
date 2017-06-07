@@ -1,13 +1,12 @@
-angular.module('PhotosApp', ['ngRoute'])
+var app = angular.module('PhotosApp', ['ngRoute'])
 
-  .config(['$routeProvider', function($routeProvider) {
+  app.config(['$routeProvider', function($routeProvider) {
     $routeProvider
     .when("/", {
       templateUrl : "gallery.html"
     })
     .when("/photos", {
-      templateUrl : "/photos.html",
-      controller : "GalleryCtrl"
+      templateUrl : "/photos.html"
     })
     .otherwise({ 
           redirectTo: '/'
