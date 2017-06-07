@@ -1,6 +1,6 @@
-var app = angular.module('PhotosApp', ['ngRoute'])
+angular.module('PhotosApp', ['ngRoute'])
 
-  app.config(['$routeProvider', function($routeProvider) {
+  .config(['$routeProvider', function($routeProvider) {
     $routeProvider
     .when("/", {
       templateUrl : "gallery.html"
