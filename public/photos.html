@@ -1,7 +1,10 @@
-<div class="test-block">
+<div class="test-block" ng-controller="photosCtrl as vm">
   <img class="logo-test" src="https://image.freepik.com/free-icon/smile_318-49788.jpg">
   <div>
     Here will be photo gallery
+  </div>
+  <div class="test_selector">
+      {{ photosCtrl.myTask }}
   </div>
   <a href="#!/">Return to main page</a>
 </div>

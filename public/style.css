@@ -27,3 +27,6 @@ body {
   text-align: center;
   margin-top: 50px;
 }
+.test_selector {
+  color: #fb0000; 
+}

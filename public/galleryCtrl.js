@@ -1,15 +1,6 @@
-var app = angular.module('app', ['ngRoute']);
+var PhotosApp = angular.module('PhotosApp');
 
-app.controller('photosCtrl', photosCtrl);
-
-photosCtrl.$inject = ['Photos'];
-
-var app = angular.module('app', ['ngRoute']);
-app.controller('photosCtrl', photosCtrl);
-
-photosCtrl.$inject = ['Photos'];
-function photosCtrl(Photos) {
+PhotosApp.controller('photosCtrl', function () {
   var vm = this;
-  this.addPhoto = function() {
-  };
-}
+  vm.myTask = 'blablabla';
+});
