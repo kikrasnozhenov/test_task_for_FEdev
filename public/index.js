@@ -10,6 +10,9 @@ angular.module('PhotosApp', ['ngRoute'])
       controller: "photosCtrl",
       controllerAs: "photosCtrl"
     })
+    .when("/contacts", {
+      templateUrl : "/contacts.html",
+    })
     .otherwise({ 
           redirectTo: '/'
       });

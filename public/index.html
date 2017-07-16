@@ -5,7 +5,8 @@
   <meta charset="utf-8" />
   <title>Test Task Kirill Krasnozhenov</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   <script src="https://code.angularjs.org/1.5.7/angular-route.js"></script>
   <script type="text/javascript" src="service.js"></script>
@@ -13,12 +14,39 @@
 </head>
 <body ng-app="PhotosApp">
   <header>
-    <span>
-      <span class="menu-button glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-    </span>
+    <span id="content-visible" class="main-overlay"></span>
+    <nav id="menu-open" class="menu-open">
+      <div class="button-open">
+      </div>
+      <span id="menu-button" class="menu-button glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+    </nav>
+    <div id="overlay-visible" class="menu-visibility">
+      <span id="zone-close" class="menu-overlay">
+      </span>
+      <div id="menu-content" class="menu">
+        <nav id="menu-close" href="#"><i class="close fa fa-times" aria-hidden="true"></i></nav>
+        <div class="menu-content">
+          <div class="main-menu-info">MENU</div>
+          <div class="menu-items">
+            <div class="menu-item">
+              <a class="menu-link" href="#">Home</a>
+            </div>
+            <div class="menu-item">
+              <a class="menu-link" href="#">Archive</a>
+            </div>
+            <div class="menu-item">
+              <a class="menu-link" href="#">Contacts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
   <div ng-view></div>
   <footer>
+    <nav id="menu-open" class="menu-open">
+    </nav>
+    <script type="text/javascript" src="menu-script.js"></script>
     <script type="text/javascript" src="galleryCtrl.js"></script>
   </footer>
 </body>
