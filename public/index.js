@@ -8,7 +8,7 @@ angular.module('PhotosApp', ['ngRoute'])
     .when("/photos", {
       templateUrl : "/photos.html",
       controller: "photosCtrl",
-      controllerAs: "photosCtrl"
+      controllerAs: "vm"
     })
     .when("/contacts", {
       templateUrl : "/contacts.html",
