@@ -41,7 +41,7 @@ body {
   opacity: 0.7;
 }
 .menu {
-  background: #4367b2;
+  background: #333333;
   position: fixed;
   top: 0;
   left: 0;
@@ -49,6 +49,7 @@ body {
   max-width: 80%;
   height: 100%;
   color: #ffffff;
+  box-shadow: 15px 10px 35px #464646;
 }
 .close {
   top: 25px;
@@ -81,6 +82,7 @@ body {
   text-decoration: none;
   color: #D4D4D4;
   font-size: 14px;
+  text-shadow: 1px 1px 5px #d4d4d4;
   transition: 0.5s;
 }
 .menu-link:hover {
@@ -103,8 +105,8 @@ body {
   text-align: center;
   display: block;
   font-size: 40px;
-  margin: : 20px 0px 20px;
-  text-shadow: 2px 2px 7px #000;
+  margin-top: 50px;
+  text-shadow: 2px 2px 9px #d4d4d4;
 }
 
 .logo-test {
@@ -119,9 +121,11 @@ body {
 .test-block {
   text-align: center;
   margin-top: 50px;
-  color: #77a0ff;
+  color: #bbb;
   font-size: 16px;
+
 }
 .test_selector {
+  padding: 30px 0px 0px 30px;
   color: #fff; 
 }

@@ -11,7 +11,7 @@ angular.module('PhotosApp', ['ngRoute'])
       controllerAs: "vm"
     })
     .when("/contacts", {
-      templateUrl : "/contacts.html",
+      templateUrl : "/contacts.html"
     })
     .otherwise({ 
           redirectTo: '/'
