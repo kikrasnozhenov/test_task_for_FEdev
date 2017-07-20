@@ -1,16 +1,11 @@
 var PhotosApp = angular.module('PhotosApp');
 
-// PhotosApp.controller('photosCtrl', function ($scope, $http) {
-//   $http.get('db.json').success(function(data) {
-//     $scope.photos = data;
-//   });
-// });
 PhotosApp.controller('photosCtrl', function ($scope, $http){
     $http({
       method: 'GET',
       url: 'db.json'
     }).then(function (success){
-        photo = success.data;
+        $scope.photos = success.data;
         console.log(success.data, 'res');
     },function (error){
       console.log(error, 'can not get data.');
