@@ -5,9 +5,9 @@
   <div class="test_selector">
     Here will be photo gallery
   </div>
-  <div class="test_selector">
+  <div class="test_selector" ng-repeat="photo in photos">
     <div>
-      {{ vm.photos }}
+      {{ photo.thumbnailUrl }}
     </div>
   </div>
   <a href="#!/">Return to main page</a>
