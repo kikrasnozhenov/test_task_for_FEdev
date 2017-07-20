@@ -6,6 +6,7 @@
     Here will be photo gallery
   </div>
   <div class="test_selector" ng-repeat="photo in photos">
+    <img ng-src="{{photo.thumbnailUrl}}"/>
     <div>
       {{ photo.title }}
     </div>
